@@ -1,0 +1,18 @@
+h2 {
+    color: white;
+    font-size: 130px;
+    text-align: center;
+}
+body {
+	background: url('/static/home/photos/img.jpeg') no-repeat;
+	background-size: cover;
+}
+p {
+    text-align: right;
+    font-size: 30px;
+}
+h1 {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+}

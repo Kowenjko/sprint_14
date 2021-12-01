@@ -1,0 +1,51 @@
+{% extends './base.html' %}
+{% load static %}
+{% block content %}
+<div class='container'>
+    <div class="row">
+      <h1 class="text-center">Book list</h1>
+      <div><a href="{% url 'home:index' %}" class="btn btn-outline-secondary">back</a></div>
+        <table class="table table-striped  table-hover mt-5" id='noteList'>
+            <thead class="table-dark">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Name</th>
+                <th scope="col">Author</th>
+                <th scope="col">Genre</th>
+                <th scope="col">Publishing</th>
+                <th scope="col">Description</th>
+                <th scope="col">Language</th>                               
+                <th scope="col">Count</th>                               
+                <th scope="col" ><i class="fas fa-plus-square"></i></th>                
+              </tr>
+            </thead>
+            <tbody>         
+            <tr>
+                <td ><img src="{% static 'img/253px-colca.gif' %}" alt="" style="width:40px;"></td>
+                <td>Властелин колец</td>
+                <td>Дж. Р. Р. Толкин</td>
+                <td>Фэнтези</td>
+                <td>20 октября 1955</td>
+                <td>«Властелин колец» — одна из самых известных и популярных книг XX века.</td>                
+                <td>Английский</td>
+                <td>5</td>
+                <td><i class="fas fa-plus-square"></i></td>
+            </tr>               
+            <tr>
+                <td ><img src="{% static 'img/Harry_Potter_and_the_Goblet_of_Fire.jpg' %}" alt="" style="width:40px;"></td>
+                <td>Гарри Поттер и Кубок огня</td>
+                <td>Дж. К. Роулинг</td>
+                <td>Роман</td>
+                <td>8 июля 2000</td>
+                <td>Книга открывается сном Гарри Поттера, в котором Лорд Волан-де-Морт — ослабший</td>
+                <td>Английский</td>
+                <td>3</td>
+                <td><i class="fas fa-plus-square"></i></td>
+            </tr>               
+        
+            </tbody>
+          </table>
+    </div>
+</div>
+
+{% endblock %}
